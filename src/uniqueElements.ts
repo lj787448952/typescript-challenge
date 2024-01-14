@@ -6,4 +6,7 @@
  */
 export function uniqueElements(array: number[]): number[] {
     // 請在此處寫下你的程式碼
+    let mySet = new Set(array)
+    const newArray = Array.from(mySet);
+    return newArray
 }

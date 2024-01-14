@@ -1,13 +1,11 @@
 /**
- * 這個函式的目的是將二維陣列的每個元素都加倍。
- * 你需要使用 JavaScript 的 Array.prototype.map 方法來實現這個功能。
- * 注意：原本的參數定義有誤，應該將參數定義為二維數字陣列。另外，函式的返回值也應該是二維數字陣列。
+ * 反轉輸入的字串
+ * @param str - 要反轉的字串
  * 
- * 範例:
- * 輸入: [[1, 2], [3, 4], [5, 6]]
- * 輸出: [[2, 4], [6, 8], [10, 12]]
+ * 這個函式需要將輸入的字串反轉。你可以使用 JavaScript 的 String 和 Array 方法來完成這個任務。
+ * 首先，使用 split 方法將字串轉換為字元陣列。然後，使用 reverse 方法將陣列反轉。最後，使用 join 方法將反轉後的陣列轉換回字串。
  */
-
-export function processMultiArray(arr) {
+export function processMultiArray(arr: number[][]) {
     // 在此實現函式
+    return arr.map((arrElement) => arrElement.map((item) => item * 2));
 }

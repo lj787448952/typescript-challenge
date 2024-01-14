@@ -8,9 +8,9 @@
  * BookCategory.Biography 代表傳記類別
  */
 export enum BookCategory {
-    Novel = 'Novel',
-    Science = 'Science',
-    Education = 'Education'
+  Novel = 'Novel',
+  Science = 'Science',
+  Education = 'Education'
 }
 
 /**
@@ -23,6 +23,12 @@ export enum BookCategory {
  * 輸出: 'Book category: Novel'
  */
 
-export function getBookCategory(category) {
+export function getBookCategory(category: BookCategory) {
   // 在此實現函式
+  let BookType = {
+    [BookCategory.Novel]: 'Book category: Novel',
+    [BookCategory.Science]: 'Book category: Science',
+    [BookCategory.Education]: 'Book category: Education'
+  }
+  return BookType[category]
 }
